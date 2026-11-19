@@ -130,6 +130,8 @@ python -m unittest -v test_screener
 Tests run without credentials or network calls. They check score boundaries, strict
 validation, PDF extraction and failure handling, Gemini response paths, safe exports,
 editable JD presets, batch continuation, result counts, and stale-run warnings.
+GitHub Actions runs this suite on every push and pull request; it does not need a
+Gemini API key.
 They do **not** certify live model quality or provider availability. Perform a live
 smoke test with authorized synthetic resumes before use with real candidate data.
 
